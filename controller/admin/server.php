@@ -34,7 +34,7 @@ class Server extends \Home {
 		if ( ! empty($pass))
 			$server->setPass($pass);
 		$server->save();
-		$this->flash('Berhasil Disimpan','success');
+		$this->flash('Saved successfully','success');
 		$f3->reroute('/home/admin/server/'.$server->id);
 	}
 
@@ -42,7 +42,7 @@ class Server extends \Home {
 		$server = $this->loadServer();
 		$server->active = $f3->get('PARAMS.active');
 		$server->save();
-		$this->flash('Berhasil Disimpan','success');
+		$this->flash('Saved successfully','success');
 		$f3->reroute('/home/admin/server/'.$server->id);
 
 	}
@@ -50,7 +50,7 @@ class Server extends \Home {
 	function Delete($f3) {
 		$server = $this->loadServer();
 		$server->erase();
-		$this->flash('Server Berhasil Dihapus','success');
+		$this->flash('Server successfully Removed','success');
 		$f3->reroute('/home/admin/server/');
 	}
 
@@ -86,7 +86,7 @@ class Server extends \Home {
 		$account = $this->loadUser($server);
 		if ($account->dry()) {
 			if ( ! $account->check($f3->get('POST.user'))) {
-				$this->flash('User Sudah Terdaftar');
+				$this->flash('User Already Registered');
 				$f3->reroute($f3->get('URI'));
 			}
 			$account->real = $this->me->username;
@@ -94,7 +94,7 @@ class Server extends \Home {
 		$account->copyFrom('POST');
 		if ($f3->exists('POST.pass',$pass)) {
 			if ( ! \Check::Confirm('POST.pass')) {
-				$this->flash('Konfirmasi Password Tidak Cocok');
+				$this->flash('Confirm Password Mismatch');
 				$f3->reroute($f3->get('URI'));
 			}
 			$account->pass = $account->crypt($pass);
@@ -102,7 +102,7 @@ class Server extends \Home {
 		if ($f3->exists('POST.exp',$exp))
 			$account->expire = \Webmin::exp_encode($exp);
 		$account->save();
-		$this->flash('Berhasil Disimpan','success');
+		$this->flash('Saved successfully','success');
 		$f3->reroute('/home/admin/server/'.$server->id.'/account/'.$account->uid);
 	}
 
@@ -116,7 +116,7 @@ class Server extends \Home {
 				$account->pass = '!'.$account->pass;
 		}
 		$account->save();
-		$this->flash('Berhasil Disimpan','success');
+		$this->flash('Saved successfully','success');
 		$f3->reroute('/home/admin/server/'.$server->id.'/account/'.$account->uid);
 	}
 
@@ -124,7 +124,7 @@ class Server extends \Home {
 		$server = $this->loadServer();
 		$account = $this->loadUser($server);
 		$account->erase();
-		$this->flash('Account Berhasil Dihapus','success');
+		$this->flash('successfully Removed','success');
 		$f3->reroute('/home/admin/server/'.$server->id.'/account');
 	}
 // "create\:$svr['user']\:$svr['pass']\:$svr['uid']\:$svr['gid']\:$svr['real']\:$svr['home']\:$svr['shell']\:$svr['min']\:$svr['max']\:$svr['warn']\:$svr['inactive']\:$svr['expire']";
