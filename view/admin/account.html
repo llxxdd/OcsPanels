@@ -4,11 +4,11 @@
             <h1 class="page-header">
                 <check if="{{ @user->uid }}">
                     <true>
-                        Edit SSH User
-                        <a href="/home/admin/server/{{ @server->id }}/account/" class="btn btn-default pull-right"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+                        Edit User
+                        <a href="/home/admin/server/{{ @server->id }}/account/" class="btn btn-default pull-right"><i class="fa fa-arrow-left fa-fw"></i> Back</a>
                     </true>
                     <false>
-                        Tambah SSH User
+                        Add User
                     </false>
                 </check>
             </h1>
@@ -37,12 +37,12 @@
                                 <input class="form-control" placeholder="New Password" name="pass" type="password" required>
                             </div>
                             <div class="form-group">
-                                <label>Masukan Ulang Password</label>
+                                <label>Re-enter Password</label>
                                 <input class="form-control" placeholder="Re-enter Password" name="pass_confirmation" type="password" required>
                             </div>
                         </check>
                         <div class="form-group">
-                            <label>Exp</label>
+                            <label>Expire</label>
                             <div class="input-group date">
                                 <input type="text" class="form-control" name="exp" value="{{ @user->exp?@user->exp:date("Y/m/d",strtotime("+30 days")) }}">
                                 <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
@@ -59,10 +59,10 @@
                                         <a href="{{ @URI.'/active/0' }}" class="btn btn-warning">Lock</a>
                                     </false>
                                 </check>
-                                <a href="{{ @URI.'/delete' }}" class="btn btn-danger hapus">Hapus</a>
+                                <a href="{{ @URI.'/delete' }}" class="btn btn-danger hapus">Delete</a>
                             </true>
                             <false>
-                                <a href="/home/admin/server/{{ @server->id }}/account/" class="btn btn-default">Kembali</a>
+                                <a href="/home/admin/server/{{ @server->id }}/account/" class="btn btn-default">Back</a>
                             </false>
                         </check>
                     </form>
@@ -73,7 +73,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-gear fa-fw"></i> Ganti Password
+                        <i class="fa fa-gear fa-fw"></i> Change Password
                     </div>
                     <div class="panel-body">
                         <form role="form" action="{{ @URI }}" method="POST">
@@ -82,7 +82,7 @@
                                 <input class="form-control" placeholder="New Password" name="pass" type="password" required>
                             </div>
                             <div class="form-group">
-                                <label>Masukan Ulang Password</label>
+                                <label>Re-enter Password</label>
                                 <input class="form-control" placeholder="Re-enter Password" name="pass_confirmation" type="password" required>
                             </div>
                             <button class="btn btn-primary">Save</button>

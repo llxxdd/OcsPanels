@@ -5,10 +5,10 @@
                 <check if="{{ @seller->id }}">
                     <true>
                         Edit Seller Account
-                        <a href="/home/admin/seller" class="btn btn-default pull-right"><i class="fa fa-arrow-left fa-fw"></i> Kembali</a>
+                        <a href="/home/admin/seller" class="btn btn-default pull-right"><i class="fa fa-arrow-left fa-fw"></i> Back</a>
                     </true>
                     <false>
-                        Tambah Seller
+                        Add Seller
                     </false>
                 </check>
             </h1>
@@ -37,15 +37,15 @@
                                 <input class="form-control" placeholder="New Password" name="password" type="password" required>
                             </div>
                             <div class="form-group">
-                                <label>Masukan Ulang Password</label>
+                                <label>Re-enter Password</label>
                                 <input class="form-control" placeholder="Re-enter Password" name="password_confirmation" type="password" required>
                             </div>
                         </check>
                         <div class="form-group">
-                            <label>Saldo</label>
+                            <label>Credit</label>
                             <div class="input-group">
-                                <span class="input-group-addon">Rp. </span>
-                                <input class="form-control" placeholder="10000" name="saldo" type="number" step="100" value="{{ @seller->saldo }}" required>
+                                <span class="input-group-addon">RM </span>
+                                <input class="form-control" placeholder="1.00" name="saldo" type="number" step="1.00" value="{{ @seller->saldo }}" required>
                             </div>
                         </div>
                         <button class="btn btn-primary">Save</button>
@@ -59,10 +59,10 @@
                                         <a href="{{ @URI.'/active/1' }}" class="btn btn-success">Unlock</a>
                                     </false>
                                 </check>
-                                <a href="{{ @URI.'/delete' }}" class="btn btn-danger hapus">Hapus</a>
+                                <a href="{{ @URI.'/delete' }}" class="btn btn-danger hapus">Delete</a>
                             </true>
                             <false>
-                                <a href="/home/admin/seller" class="btn btn-default">Kembali</a>
+                                <a href="/home/admin/seller" class="btn btn-default">Back</a>
                             </false>
                         </check>
                     </form>
@@ -73,7 +73,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-gear fa-fw"></i> Ganti Password
+                        <i class="fa fa-gear fa-fw"></i> Change Password
                     </div>
                     <div class="panel-body">
                         <form role="form" action="{{ @URI }}" method="POST">
@@ -82,7 +82,7 @@
                                 <input class="form-control" placeholder="New Password" name="password" type="password" required>
                             </div>
                             <div class="form-group">
-                                <label>Masukan Ulang Password</label>
+                                <label>Re-enter Password</label>
                                 <input class="form-control" placeholder="Re-enter Password" name="passwordconfirmation" type="password" required>
                             </div>
                             <button class="btn btn-primary">Save</button>
