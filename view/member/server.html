@@ -1,9 +1,9 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">
+            <h4 class="page-header" style="color: #29088A">
                 {{ @server->servername }}
-            </h1>
+            </h4>
         </div>
     </div>
     <div class="row">
@@ -12,26 +12,27 @@
                 <div class="alert alert-{{ @message['type'] }}">{{ @message['data'] }}</div>
             </div>
         </check>
-        <div class="col-md-4 col-lg-3">
+      
+        <div class="col-md-4 col-lg-3"><div>
             <div class="row">
                 <div class="col-xs-6 col-md-12">
-                    <div class="well">Saldo : <B>{{ @me->saldo }}</B></div>                    
-                </div>
+                    <div class="well" style="color: #FF0040">Baki RM: <B>{{ @me->saldo }}</B></div>
+             </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <b>{{ @server->servername }}</b> {{ @server->active==1?'':'( Locked )'}}
+                            <b style="color: #8A0808">{{ @server->servername }}</b> {{ @server->active==1?'':'( Locked )'}}
                         </div>
                         <table class="table">
                             <tr>
-                                <td>Lokasi</td><td>{{ @server->country }}</td>
+                                <td style="color: #7401DF">Lokasi</td><td style="color: #0B610B">{{ @server->country }}</td>
                             </tr>
                             <tr>
-                                <td>Host</td><td>{{ @server->host }}</td>
+                                <td style="color: #7401DF">Host</td><td style="color: #0B610B">{{ @server->host }}</td>
                             </tr>
                             <tr>
-                                <td>Harga</td><td>{{ @server->price }}</td>
+                                <td style="color: #7401DF">Harga RM</td><td style="color: #0B610B">{{ @server->price }}</td>
                             </tr>
                         </table>
                     </div>
@@ -41,27 +42,27 @@
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-shopping-cart fa-fw"></i> Server Settings
-                </div>
+                    <font ><marquee direction="left" style="background:orange">Sudah Buat Akaun.....Sila beritahu pelanggan anda.....Tidak boleh 🚫 torrent, 🚫 hack, 🚫 speedtest, 🚫 mutilogin.....Terima Kasih</marquee></font>
+              </div>
                 <div class="panel-body">
                     <form role="form" action="{{ @URI }}" method="POST">
                         <div class="form-group">
-                            <label>Username</label>
-                            <input class="form-control" placeholder="Sudirman" name="user" type="text" required>
+                            <label style="color: #AEB404">Usernama</label>
+                            <input class="form-control" placeholder="Taip nama pelanggan " name="user" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>Password</label>
-                            <input class="form-control" placeholder="New Password" name="pass" type="password" required>
+                            <label style="color: #AEB404">Password baru</label>
+                            <input class="form-control" placeholder="Taip password baru pelanggan" name="pass" type="password" required>
                         </div>
                         <div class="form-group">
-                            <label>Masukan Ulang Password</label>
-                            <input class="form-control" placeholder="Re-enter Password" name="pass_confirmation" type="password" required>
+                            <label style="color: #AEB404">Masukan Semula Password</label>
+                            <input class="form-control" placeholder="Ulang password baru pelanggan" name="pass_confirmation" type="password" required>
                         </div>
-                        <button class="btn btn-primary">Simpan</button>
-                        <a href="/home/member/server" class="btn btn-default">Kembali</a>
+                        <button class="btn btn-primary" style="color: #FFFFFF">Simpan</button>
+                        <a href="/home/member/server" class="btn btn-default" style="color: #0B610B">Kembali</a>
                     </form>
-                </div>
-            </div>
+              </div> 
+          </div>
         </div>
     </div>
 </div>

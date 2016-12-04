@@ -1,8 +1,8 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">
-                SSH Account
+            <h1 class="page-header" style="color: #04B45F">
+                Akaun ssh-ovpn
             </h1>
         </div>
     </div>
@@ -15,31 +15,29 @@
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-user fa-fw"></i> Account Details
+                    <marquee style="border:blue 2px SOLID">Akaun dan server butiran ----- SSH port : 22 ----- Dropbear : 443 ----- Remote proxy port 8080</marquee>
                 </div>
                 <table class="table table-hover">
                     <tbody>
                         <tr>
-                            <td>Username</td><td>{{ @user->user }}</td>
+                            <td style="color: #04B45F">Username</td><td style="color: #FFBF00">{{ @user->user }}</td>
                         </tr>
                         <tr>
-                            <td>Password</td><td>{{ @user->pass }}</td>
+                            <td style="color: #04B45F">Password</td><td style="color: #FFBF00">{{ @user->pass }}</td>
                         </tr>
                         <tr>
-                            <td>Host</td><td>{{ @server->host }}</td>
+                            <td style="color: #04B45F">Host</td><td style="color: #FFBF00">{{ @server->host }}</td>
                         </tr>
                         <tr>
-                            <td>Lokasi</td><td>{{ @server->country }}</td>
-                        </tr>
+                            <td style="color: #04B45F">Lokasi</td><td style="color: #FFBF00">{{ @server->country }}</td>
+                        </tr> 
+
                         <tr>
-                            <td>Harga</td><td>{{ @server->price }}</td>
-                        </tr>
-                        <tr>
-                            <td>Exp</td><td>{{ \Webmin::exp_decode(@user->expire) }}</td>
+                            <td style="color: #04B45F">Exp</td><td style="color: #FFBF00">{{ \Webmin::exp_decode(@user->expire) }}</td>
                         </tr>
                         <tr class="hidden-print">
                             <td colspan="2">
-                                <a href="#" class="btn btn-primary" onclick="print_report()">Print</a>
+                                <a href="#" class="btn btn-primary" onclick="print_report()">Eksport</a>
                                 <a href="/home/member/server" class="btn btn-default">Kembali</a>
                             </td>
                         </tr>
