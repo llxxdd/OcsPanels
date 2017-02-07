@@ -31,18 +31,18 @@ class Server extends \Home {
 		$server = $this->loadServer();
 		$account = new \Webmin($server);
 		if (($saldo = $this->me->saldo)<$server->price) {
-			$this->flash('Baki Tidak Mencukupi Sila Tambah Nilai');
+			$this->flash('Insufficient Balance Please Add Value');
 			$f3->reroute($f3->get('URI'));
 		}
 		if ( ! $account->check($f3->get('POST.user'))) {
-			$this->flash('User Sudah Didaftar, Sila Cuba Yang Lain');
+			$this->flash('Already Registered user, please try another');
 			$f3->reroute($f3->get('URI'));
 		}
 		$account->copyFrom('POST');
 		$account->real = $this->me->username;
 		if ($f3->exists('POST.pass',$pass)) {
 			if ( ! \Check::Confirm('POST.pass')) {
-				$this->flash('Re-enter Password Tidak Sama');
+				$this->flash('Re-enter Password not the same');
 				$f3->reroute($f3->get('URI'));
 			}
 			$account->pass = $account->crypt($pass);
@@ -50,12 +50,12 @@ class Server extends \Home {
 		$active = date("Y/m/d",strtotime("+30 days"));
 		$account->expire = \Webmin::exp_encode($active);
 		if( ! $account->save()) {
-			$this->flash('Salah, Sila cuba beberapa minit');
+			$this->flash('Wrong, Please try a few minutes');
 			$f3->reroute($f3->get('URI'));
 		}
 		$this->me->saldo = $this->me->saldo-$server->price;
 		$this->me->save();
-		$this->flash('Akaun berjaya didaftar','success');
+		$this->flash('Account successfully registered','success');
 		$f3->set('SESSION.uid',$account->uid);
 		$f3->set('SESSION.pass',$pass);
 		$f3->reroute($f3->get('URI').'/success');
