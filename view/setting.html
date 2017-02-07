@@ -1,7 +1,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">          
-          <h1 class="page-header" style="color: #AEB404">Tetapan</h1>
+          <h1 class="page-header" style="color: #AEB404">Settings</h1>
         </div>
     </div>
     <div class="row">
@@ -11,22 +11,22 @@
             </check>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h1 class="fa fa-gear fa-fw" ></h1><b style="color: #8A0808"> Tukar Password Jika Perlu</b></div>
+                    <h1 class="fa fa-gear fa-fw" ></h1><b style="color: #8A0808"> Change password if you need</b></div>
                 <div class="panel-body">
                     <form role="form" action="{{ @URI }}" method="POST">
                         <div class="form-group">
-                            <label style="color: #B45F04"> Password Lama</label>
-                            <input class="form-control" placeholder=" Password lama" name="oldpass" type="password" required>
+                            <label style="color: #B45F04"> Old Password</label>
+                            <input class="form-control" placeholder=" Old Password" name="oldpass" type="password" required>
                         </div>
                         <div class="form-group">
-                            <label style="color: #B45F04"> Password Baru</label>
-                            <input class="form-control" placeholder="Password baru" name="password" type="password" required>
+                            <label style="color: #B45F04"> New Password</label>
+                            <input class="form-control" placeholder="New Password" name="password" type="password" required>
                         </div>
                         <div class="form-group">
-                            <label style="color: #B45F04">Ulangan Password Baru</label>
-                            <input class="form-control" placeholder="Ulangan password baru" name="password_confirmation" type="password" required>
+                            <label style="color: #B45F04">Re-enter New Password</label>
+                            <input class="form-control" placeholder="Re-enter New Password" name="password_confirmation" type="password" required>
                         </div>
-                        <button class="btn btn-primary">SIMPAN</button>
+                        <button class="btn btn-primary">SAVE</button>
                     </form>
                 </div>
             </div>
