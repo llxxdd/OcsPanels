@@ -16,7 +16,7 @@ class Install {
 
 	function Set($f3) {
 		if ( ! \Check::confirm('POST.password')) {
-			$this->flash('Konfirmasi Password Tidak Cocok');
+			$this->flash('Confirm Password Mismatch');
 			$f3->reroute($f3->get('URI'));
 		}
 		$post = $f3->get('POST');
@@ -39,7 +39,7 @@ class Install {
 			$f3->write('config/config.ini',$data);
 			$f3->write('config/route.ini',$f3->read('installation/route.ini'));
 			$db->commit();
-			$this->flash('Success... Silahkan Hapus Folder Installation','success');
+			$this->flash('Setup Panel Reseller Success...','success');
 		} catch (Exception $e) {
 			$db->rollback();
 			$this->flash($e->getMessage());
