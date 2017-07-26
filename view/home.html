@@ -6,45 +6,7 @@
           <b style="color: red" class="glyphicon glyphicon-align-justify"><strong>  MENU</strong></b>        
           </button>
          
-      </div>
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse">
-                <ul class="nav" id="side-menu">
-                    <li class="sidebar-search">
-                        <div class="row">
-                            <div class="col-xs-5">
-                                <span class="fa-stack fa-3x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </div>
-                            <div class="col-xs-7">
-                                <h4><b>{{ @me->username }}</b></h4>
-                                <h4 class="text-muted">{{ @me->type==1?'Admin':'<marquee direction="up" scrollamount="2" style="color: #DF01D7">PREMIUM SERVER</marquee>' }}</h4>
-                            </div>
-                        </div>
-                    </li>
-
-                    <check if="{{ @me->type==1 }}">
-                        <true>
-                            <li>
-                                <a href="/home/admin/server"><i class="fa fa-th-list fa-fw"></i> Server</a>
-                            </li>
-                            <li>
-                                <a href="/home/admin/seller"><i class="fa fa-group fa-fw"></i>Reseller</a>
-                            </li>
-                        </true>
-                        <false>  
-                          <li>
-                                <a href="/home/member/server"><i class="fa fa-shopping-cart fa-fw"></i> Buy SSH-VPN</a>
-                            </li>
-                        </false>
-                    </check>
-                    <li>
-                        <a href="/home/setting"><i class="fa fa-gear fa-fw"></i> Setting</a>
-                    </li>
-                    <li>
-                        <a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+     
                     </li>
                  
                 </ul>
