@@ -4,29 +4,6 @@
           <h1 class="page-header" style="color: #AEB404">Settings</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <check if="{{ @message }}">
-                <div class="alert alert-{{ @message['type'] }}">{{ @message['data'] }}</div>
-            </check>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="fa fa-gear fa-fw" ></h1><b style="color: #8A0808"> Change password if you need</b></div>
-                <div class="panel-body">
-                    <form role="form" action="{{ @URI }}" method="POST">
-                        <div class="form-group">
-                            <label style="color: #B45F04"> Old Password</label>
-                            <input class="form-control" placeholder=" Old Password" name="oldpass" type="password" required>
-                        </div>
-                        <div class="form-group">
-                            <label style="color: #B45F04"> New Password</label>
-                            <input class="form-control" placeholder="New Password" name="password" type="password" required>
-                        </div>
-                        <div class="form-group">
-                            <label style="color: #B45F04">Re-enter New Password</label>
-                            <input class="form-control" placeholder="Re-enter New Password" name="password_confirmation" type="password" required>
-                        </div>
-                        <button class="btn btn-primary">SAVE</button>
                     </form>
                 </div>
             </div>
