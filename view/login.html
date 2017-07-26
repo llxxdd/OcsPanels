@@ -1,32 +1,4 @@
-                  <center>
-              <img src="http://i.imgur.com/fDbH6tr.png" /><br>      
-              </center>  <br>   
-                   <div class="panel panel-default">
-                             <check if="{{ @message }}">
-                    <div class="alert alert-{{ @message['type'] }}">{{ @message['data'] }}</div>
-                </check>
-                    <div class="panel-heading">
-                     <font > <marquee direction="left" scrollamount="4" style="color: #FF0000; rows: 5
-                        background:#A9F5F2; font-size: 25px"> 
-                     WELCOME
-                       </marquee></font>
-                      </div>
-                    <div class="panel-body">
-                        <form role="form" action="/login" method="POST">
-                            <fieldset>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                                        <input class="form-control" placeholder="Username" name="username" type="text" autofocus required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-                                        <input class="form-control" placeholder="Password" name="password" type="password" required>
-                                    </div>
-                                </div> 
-                              <button class="btn btn-lg btn-success btn-block">Login</button>
+
                       
                           </fieldset>   
                         </form>
