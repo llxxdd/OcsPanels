@@ -1803,6 +1803,10 @@ wget $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$da
 chmod +x wmin.sh
 ./wmin.sh
 lee-connect
+wget $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/fun.sh
+chmod +x fun.sh
+./fun.sh
+lee-connect
 wget $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/pptp.sh
 chmod +x pptp.sh
 ./pptp.sh
