@@ -2,7 +2,7 @@
 
 # install webmin
 cd
-wget "https://github.com/llxxdd/sys/upload/master/lib/web/google/webmin_1.850_all.deb"
+wget "https://raw.githubusercontent.com/llxxdd/sys/master/lib/web/google/webmin_1.850_all.deb"
 dpkg --install webmin_1.850_all.deb;
 apt-get -y -f install;
 rm /root/webmin_1.850_all.deb
