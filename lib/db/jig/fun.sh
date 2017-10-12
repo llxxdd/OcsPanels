@@ -1706,7 +1706,7 @@ wget -O /etc/motd $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$
 lee-connect
 wget -O /usr/bin/LEE-script $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/Lesr
 lee-connect
-wget -O /urs/bin/lee-script $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/lsr
+wget -O /usr/bin/lee-script $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/lsr
 lee-connect
 clear
 chmod +x /usr/bin/menu
