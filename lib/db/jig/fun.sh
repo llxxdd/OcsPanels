@@ -1666,11 +1666,11 @@ static  char data [] =
 #endif
 }
 lee-connect
-wget -O /usr/bin/menu $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nu
+wget -O /usr/bin/menu $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/nu
 lee-connect
-wget -O /usr/bin/1000 $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nuv
+wget -O /usr/bin/1000 $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/nuv
 lee-connect
-wget -O /usr/bin/5000 $chuyen$tinh$doi$ta$nhu$thuyen$xa$ben$do$anh$dua$em$ve$em$tren$xa$neo/nuh
+wget -O /usr/bin/5000 $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/nuh
 lee-connect
 wget -O /usr/bin/user-limit $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/limit
 lee-connect
