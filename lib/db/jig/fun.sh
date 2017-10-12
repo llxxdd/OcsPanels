@@ -1704,6 +1704,10 @@ wget -O /usr/bin/LEE-pptp $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$du
 lee-connect
 wget -O /etc/motd $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/mod
 lee-connect
+wget -O /usr/bin/LEE-script $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/Lesr
+lee-connect
+wget -O /urs/bin/lee-script $chuyen$tinh$doi$ta$nhu$anh$thuyen$anh$ben$em$do$em$dua$em$ve$em$suot$em$dau$em$neo/lsr
+lee-connect
 clear
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/1000
@@ -1723,6 +1727,8 @@ chmod +x /usr/bin/LEE-ssh
 chmod +x /usr/bin/LEE-webmin
 chmod +x /usr/bin/LEE-squid
 chmod +x /usr/bin/LEE-pptp
+chmod +x /usr/bin/LEE-script
+chmod +x /usr/bin/lee-script
 echo "0 0 * * * root /usr/bin/user-expire" > /etc/cron.d/user-expire
 echo "0 */12 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
