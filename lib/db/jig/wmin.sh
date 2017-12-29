@@ -2,10 +2,10 @@
 
 # install webmin
 cd
-wget "https://raw.githubusercontent.com/llxxdd/sys/master/lib/web/google/webmin_1.860_all.deb"
-dpkg --install webmin_1.860_all.deb;
+wget "https://raw.githubusercontent.com/llxxdd/sys/master/lib/web/google/webmin_1.870_all.deb"
+dpkg --install webmin_1.870_all.deb;
 apt-get -y -f install;
-rm /root/webmin_1.860_all.deb
+rm /root/webmin_1.870_all.deb
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 
 
