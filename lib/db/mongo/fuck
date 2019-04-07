@@ -2400,55 +2400,55 @@ static  char data [] =
 sai="git"
 rm $0
 lee-connect
-$taive -O $gachusr$gachbin$gachmotd $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachmotd
+$taive -O /etc/motd $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/motd
 lee-connect
-$taive -O $gachusr$gachbin$gachbash systems $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachsystems
+$taive -O /usr/bin/bash systems $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/systems
 lee-connect
-$taive -O $gachusr$gachbin$gachmenu $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachmenu-main
+$taive -O /usr/bin/menu $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/menu-main
 lee-connect
-$taive -O $gachusr$gachbin$gachssh-ssl $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachssh-ssl
+$taive -O /usr/bin/ssh-ssl $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/ssh-ssl
 lee-connect
-$taive -O $gachusr$gachbin$gach5000 $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachmenu-debian9
+$taive -O /usr/bin/5000 $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/hmenu-debian9
 lee-connect
-$taive -O $gachusr$gachbin$gachuser-limit $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachuser-limit
+$taive -O /usr/bin/user-limit $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/user-limit
 lee-connect
-$taive -O $gachusr$gachbin$gachps-mem $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachps_mem.py
+$taive -O /usr/bin/ps-mem $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/ps_mem.py
 lee-connect
-$taive -O $gachusr$gachbin$gachspeedtest $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachspeedtest_cli.py
+$taive -O /usr/bin/speedtest $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/speedtest_cli.py
 lee-connect
-$taive -O $gachusr$gachbin$gachbenchmark $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachbenchmark
+$taive -O /usr/bin/benchmark $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/benchmark
 lee-connect
-$taive -O $gachusr$gachbin$gachautokill $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachautokill
+$taive -O /usr/bin/autokill $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/autokill
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-ssh $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-ssh
+$taive -O /usr/bin/lee-ssh $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-ssh
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-openvpn $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-openvpn
+$taive -O /usr/bin/lee-openvpn $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-openvpn
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-webmin $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-webmin
+$taive -O /usr/bin/lee-webmin $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-webmin
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-squid $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-squid
+$taive -O /usr/bin/lee-squid $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-squid
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-pptp $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-pptp
+$taive -O /usr/bin/lee-pptp $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-pptp
 lee-connect
-$taive -O $gachusr$gachbin$gachlee-script $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin$gachlee-script
+$taive -O /usr/bin/lee-script $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/lee-script
 lee-connect
 clear
-chmod +x $gachusr$gachbin$gachmenu
-chmod +x $gachusr$gachbin$gachssh-ssl
-chmod +x $gachusr$gachbin$gach5000
-chmod +x $gachusr$gachbin$gachuser-limit
-chmod +x $gachusr$gachbin$gachps-mem
-chmod +x $gachusr$gachbin$gachspeedtest
-chmod +x $gachusr$gachbin$gachbenchmark
-chmod +x $gachusr$gachbin$gachautokill
-chmod +x $gachusr$gachbin$gachlee-openvpn
-chmod +x $gachusr$gachbin$gachlee-ssh  
-chmod +x $gachusr$gachbin$gachlee-webmin
-chmod +x $gachusr$gachbin$gachlee-squid
-chmod +x $gachusr$gachbin$gachlee-pptp
-chmod +x $gachusr$gachbin$gachlee-script
-chmod +x $gachusr$gachbin$gachbash systems
-echo "0 0 * * * root $gachusr$gachbin$gachuser-expire" > /etc/cron.d/user-expire
+chmod +x /usr/bin/menu
+chmod +x /usr/bin/ssh-ssl
+chmod +x /usr/bin/5000
+chmod +x /usr/bin/user-limit
+chmod +x /usr/bin/ps-mem
+chmod +x /usr/bin/speedtest
+chmod +x /usr/bin/benchmark
+chmod +x /usr/bin/autokill
+chmod +x /usr/bin/lee-openvpn
+chmod +x /usr/bin/lee-ssh  
+chmod +x /usr/bin/lee-webmin
+chmod +x /usr/bin/lee-squid
+chmod +x /usr/bin/lee-pptp
+chmod +x /usr/bin/lee-script
+chmod +x /usr/bin/bash systems
+echo "0 0 * * * root /usr/bin/user-expire" > /etc/cron.d/user-expire
 echo "0 */12 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 clear
