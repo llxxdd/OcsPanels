@@ -13,13 +13,3 @@ COMMIT
 :POSTROUTING ACCEPT [0:0]
 -A POSTROUTING -o eth0 -j SNAT --to-source ipserver
 COMMIT
-
--A INPUT -i eth0 -m state --state NEW -p tcp --dport 1194 -j ACCEPT
--A INPUT -i tun+ -j ACCEPT
--A FORWARD -i tun+ -j ACCEPT
--A FORWARD -i tun+ -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT
--A FORWARD -i eth0 -o tun+ -m state --state RELATED,ESTABLISHED -j ACCEPT
--t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
--A OUTPUT -o tun+ -j ACCEPT
-COMMIT
-
