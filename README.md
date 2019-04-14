@@ -1,3 +1,3 @@
 
-<head><title>403 Forbidden</title></head>
+<head>403 Forbidden</head>
 <p>Directory access is forbidden.</p>
