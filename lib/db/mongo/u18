@@ -2478,12 +2478,11 @@ sudo apt install unzip
 sudo apt-get -y install openvpn
 mkdir /etc/openvpn
 lee-connect
-wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/open.zip
+wget etc/openvpn/openvpn.zip $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/open.zip
 clear
-mv open.zip /etc/openvpn
 cd /etc/openvpn
-unzip open.zip
-rm open.zip
+unzip openvpn.zip
+rm openvpn.zip
 lee-connect
 wget -O /etc/rc.local $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/rc.local;chmod +x /etc/rc.local
 clear
@@ -2497,8 +2496,6 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn
 useradd -m -g users -s /bin/bash lee
 echo "lee:1" | chpasswd
-cd /root
-history -c
 #PPTP
 sudo apt-get -y install pptpd
 cat > /etc/ppp/pptpd-options <<END
