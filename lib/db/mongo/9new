@@ -2474,16 +2474,16 @@ clear
 sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
 sed -i "s/ipserver/$myip/g" /etc/squid/squid.conf
 # openvpn
-apt install unzip
 apt-get -y install openvpn
 mkdir /etc/openvpn
 lee-connect
-wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/open.zip
+wget $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/open.tar.gz
 clear
-mv open.zip /etc/openvpn
+mv open.tar.gz /etc/openvpn
 cd /etc/openvpn
-unzip open.zip
-rm open.zip
+tar -zxvf open.tar.gz
+rm open.tar.gz
+cd /root
 lee-connect
 wget -O /etc/rc.local $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/rc.local;chmod +x /etc/rc.local
 clear
@@ -2491,14 +2491,12 @@ clear
 #sed -i "s/ipserver/$myip/g" /etc/iptables.up.rules
 #iptables-restore < /etc/iptables.up.rules
 lee-connect
-wget -O /home/vps/public_html/client.ovpn $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/client.ovpn
+wget -O /home/vps/public_html/client.ovpn $tim$kiem$haicham$gach$gach$ngay$cham$sai$nao$yeu$nhau$anh$cham$hoi$gach$em$cau$rang$gach$tien$gach$sao$thi$gach$tinh$gach$loi$gach$xin/klient.ovpn
 clear
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn
 useradd -m -g users -s /bin/bash lee
 echo "lee:1" | chpasswd
-cd /root
-history -c
 #PPTP
 apt-get -y install pptpd
 cat > /etc/ppp/pptpd-options <<END
