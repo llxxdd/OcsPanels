@@ -2495,8 +2495,8 @@ wget -O /home/vps/public_html/client.ovpn $tim$kiem$haicham$gach$gach$ngay$cham$
 clear
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn
-useradd -m -g users -s /bin/bash lee
-echo "lee:1" | chpasswd
+useradd -m -g users -s /bin/bash sshvpn
+echo "sshvpn:1" | chpasswd
 #PPTP
 apt-get -y install pptpd
 cat > /etc/ppp/pptpd-options <<END
