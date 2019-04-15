@@ -2625,14 +2625,14 @@ apt-get -y autoremove;
 apt-get -y install wget curl;
 # script
 lee-connect
-wget -O /etc/pam.d/common-password Backspace/common-password
+wget -O /etc/pam.d/common-password "Backspace/common-password"
 clear
 lee-connect
 chmod +x /etc/pam.d/common-password
 # fail2ban & exim & protection
 apt-get -y install fail2ban sysv-rc-conf dnsutils dsniff zip unzip;
 lee-connect
-wget Backspace/master.zip;unzip master.zip;
+wget "Backspace/master.zip";unzip master.zip;
 clear
 lee-connect
 cd ddos-deflate-master && ./install.sh
@@ -2643,7 +2643,7 @@ sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 # dropbear
 apt-get -y install dropbear
 lee-connect
-wget -O /etc/default/dropbear Backspace/dropbear
+wget -O /etc/default/dropbear "Backspace/dropbear"
 clear
 lee-connect
 echo "/bin/false" >> /etc/shells
@@ -2654,14 +2654,14 @@ apt-get install nginx php-fpm php-mcrypt php-cli libexpat1-dev libxml-parser-per
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 lee-connect
-wget -O /etc/php/7.0/fpm/pool.d/www.conf Backspace/nginx.conf
+wget -O /etc/php/7.0/fpm/pool.d/www.conf "Backspace/nginx.conf"
 clear
 lee-connect
 mkdir -p /home/vps/public_html
 echo "<pre>Power VPN</pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 lee-connect
-wget -O /etc/nginx/conf.d/vps.conf Backspace/vps.conf
+wget -O /etc/nginx/conf.d/vps.conf "Backspace/vps.conf"
 clear
 lee-connect
 sed -i 's/listen = \/var\/run\/php7.0-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php/7.0/fpm/pool.d/www.conf
@@ -2669,10 +2669,10 @@ sed -i 's/listen = \/var\/run\/php7.0-fpm.sock/listen = 127.0.0.1:9000/g' /etc/p
 apt-get -y install squid
 apt-get -y install squid3
 lee-connect
-wget -O /etc/squid3/squid.conf Backspace/squid.conf
+wget -O /etc/squid3/squid.conf "Backspace/squid.conf"
 clear
 lee-connect
-wget -O /etc/squid/squid.conf Backspace/squid.conf
+wget -O /etc/squid/squid.conf "Backspace/squid.conf"
 clear
 sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
 sed -i "s/ipserver/$myip/g" /etc/squid/squid.conf
@@ -2680,7 +2680,7 @@ sed -i "s/ipserver/$myip/g" /etc/squid/squid.conf
 apt-get -y install openvpn
 mkdir /etc/openvpn
 lee-connect
-wget Backspace/open.tar.gz
+wget "Backspace/open.tar.gz"
 clear
 mv open.tar.gz /etc/openvpn
 cd /etc/openvpn
@@ -2688,13 +2688,13 @@ tar -zxvf open.tar.gz
 rm open.tar.gz
 cd /root
 lee-connect
-wget -O /etc/rc.local Backspace/rc.local;chmod +x /etc/rc.local
+wget -O /etc/rc.local "Backspace/rc.local";chmod +x /etc/rc.local
 clear
-#wget -O /etc/iptables.up.rules Backspace/iptables.up.rules
+#wget -O /etc/iptables.up.rules "Backspace/iptables.up.rules
 #sed -i "s/ipserver/$myip/g" /etc/iptables.up.rules
 #iptables-restore < /etc/iptables.up.rules
 lee-connect
-wget -O /home/vps/public_html/client.ovpn Backspace/klient.ovpn
+wget -O /home/vps/public_html/client.ovpn "Backspace/klient.ovpn"
 clear
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn
